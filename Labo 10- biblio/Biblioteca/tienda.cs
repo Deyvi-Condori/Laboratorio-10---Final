@@ -78,11 +78,14 @@ public class Tienda
         Console.WriteLine("--------------------------------");
         Console.WriteLine($"Total{"".PadRight(15)}| {totalVendido}");
         Console.WriteLine("================================");
-        Console.WriteLine("¡Hasta Luego!\n\n\n\nDiseñado Por: [Deyvi Condori]");
-
+        Console.WriteLine("¡Hasta Luego!\n\n\n\n");
+        Console.Write("Diseñado Por: ");
+        Console.ForegroundColor = ConsoleColor.Red; 
+        Console.Write("[Deyvi Condori]");
+        Console.ResetColor(); 
         Console.ReadLine();
     }
-    private int PedirOpcion()
+    public int PedirOpcion()
     {
         Console.Write("Ingrese una opción: ");
         return int.Parse(Console.ReadLine());
