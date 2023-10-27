@@ -69,7 +69,7 @@ public class Producto
         Console.ReadKey();
     }
 
-    private int PedirOpcion()
+    public int PedirOpcion()
     {
         Console.Write("Ingrese una opción: ");
         return int.Parse(Console.ReadLine());
